@@ -142,15 +142,6 @@ class Ui_MainWindow(object):
                 self.minus.setText(_translate("MainWindow", "-"))
                 self.delit.setText(_translate("MainWindow", "/"))
 
-        
-                '''
-                Назначай обработчики уже внутри класса (self)
-                Если они назначены в отдельной функции def function(self),
-                то тебе при инициализации нужно ее вызывать self.function()
-                но это не имеет смысла и обработчики делай сразу при инициализации,
-                как я это сделал тут
-                '''
-
                 self.pb0.clicked.connect(lambda:self.wrtnumber(self.pb0.text()))
                 self.pb1.clicked.connect(lambda:self.wrtnumber(self.pb1.text()))
                 self.pb2.clicked.connect(lambda:self.wrtnumber(self.pb2.text()))
